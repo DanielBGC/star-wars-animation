@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./planodefundo.jpeg")
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha horizontalmente quando é coluna*/
+}
+
+section h1 {
+    color: black;
+    text-shadow: yellow 0px 0px 4px;
+    animation: linear 15s 2s forwards titulo;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 5em;
+    opacity: 0;
+    text-align: center;
+}
+
+@keyframes titulo {
+    from {
+        opacity: 1;
+        transform: scale(8);
+    }
+
+    to {
+        left: 50vw;
+        opacity: 1;
+        transform: scale(0) translateX(-30px);
+    }
+} 
+
+section p, footer {
+    color: yellow;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    animation: linear 40s 11s historia;
+    font-size: 3em;
+    perspective-origin:150px 150px;
+    opacity: 0;
+} 
+
+@keyframes historia {
+    from {
+        opacity: 1;
+        transform: translateY(100vh) rotateX(30deg); 
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-2600px) rotateX(30deg);
+        perspective: 500px;
+    }
+}
+
+.tecnologias {
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    color: red;
+}
