@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: url("./planodefundo.jpeg")
+    background-image: url("./planodefundo.jpeg");
+    overflow: hidden;
 }
 
 section {
